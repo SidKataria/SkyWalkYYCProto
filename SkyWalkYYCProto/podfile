@@ -1,0 +1,4 @@
+source 'https://github.com/artsy/Specs.git'
+platform :ios, '12.1'
+pod 'AFNetworking'
+pod "Google-Analytics-for-OS-X-and-iOS"
