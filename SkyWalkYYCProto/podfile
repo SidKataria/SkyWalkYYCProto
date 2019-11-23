@@ -1,4 +1,5 @@
-source 'https://github.com/artsy/Specs.git'
-platform :ios, '12.1'
-pod 'AFNetworking'
-pod "Google-Analytics-for-OS-X-and-iOS"
+ platform :ios, '12.1'
+target 'SkyWalkYYCProto'
+workspace 'SkyWalkYYCProto.xcodeproj'
+pod 'AFNetworking', '~> 3.2.1'
+pod 'GoogleAnalytics', '~> 3.17.0'
