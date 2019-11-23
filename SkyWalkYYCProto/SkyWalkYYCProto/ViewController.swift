@@ -11,8 +11,6 @@ import SceneKit
 import ARKit
 import MapKit
 import CoreLocation
-import AFNetworking
-
 
 class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
