@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F06DDF82389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */; };
+		1F06DDF92389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE78498238BB0900056A2A5 /* PointsScene.swift */; };
 		1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE99FD823722DA900F082DF /* AppDelegate.swift */; };
 		1FE99FDB23722DA900F082DF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE99FDA23722DA900F082DF /* art.scnassets */; };
 		1FE99FDD23722DA900F082DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE99FDC23722DA900F082DF /* ViewController.swift */; };
@@ -34,7 +37,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1F06DDFA2389FE7200428EB0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F06DDF92389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SkyWalkYYCProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FBF827A2389F3DF004298A8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE78498238BB0900056A2A5 /* PointsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsScene.swift; sourceTree = "<group>"; };
 		1FE99FD523722DA900F082DF /* SkyWalkYYCProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWalkYYCProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE99FD823722DA900F082DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FE99FDA23722DA900F082DF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -49,6 +69,9 @@
 		1FE99FF623722DB000F082DF /* SkyWalkYYCProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyWalkYYCProtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE99FFA23722DB000F082DF /* SkyWalkYYCProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWalkYYCProtoUITests.swift; sourceTree = "<group>"; };
 		1FE99FFC23722DB000F082DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20CA8325F072E184C2937E5A /* Pods-SkyWalkYYCProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyWalkYYCProto.release.xcconfig"; path = "Target Support Files/Pods-SkyWalkYYCProto/Pods-SkyWalkYYCProto.release.xcconfig"; sourceTree = "<group>"; };
+		31E08CE9C90A79C1A42ABAFC /* Pods-SkyWalkYYCProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyWalkYYCProto.debug.xcconfig"; path = "Target Support Files/Pods-SkyWalkYYCProto/Pods-SkyWalkYYCProto.debug.xcconfig"; sourceTree = "<group>"; };
+		49ED48B961A075C3DA2E59C8 /* Pods_SkyWalkYYCProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyWalkYYCProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F06DDF82389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CCC81B6E0B4071D3030D6EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31E08CE9C90A79C1A42ABAFC /* Pods-SkyWalkYYCProto.debug.xcconfig */,
+				20CA8325F072E184C2937E5A /* Pods-SkyWalkYYCProto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1FE99FCC23722DA900F082DF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +116,8 @@
 				1FE99FEE23722DB000F082DF /* SkyWalkYYCProtoTests */,
 				1FE99FF923722DB000F082DF /* SkyWalkYYCProtoUITests */,
 				1FE99FD623722DA900F082DF /* Products */,
+				872A5FD21988C6934CB36F15 /* Frameworks */,
+				1CCC81B6E0B4071D3030D6EA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +135,12 @@
 			isa = PBXGroup;
 			children = (
 				1FE99FD823722DA900F082DF /* AppDelegate.swift */,
-				1FE99FDA23722DA900F082DF /* art.scnassets */,
+				1FE78498238BB0900056A2A5 /* PointsScene.swift */,
 				1FE99FDC23722DA900F082DF /* ViewController.swift */,
 				1FE99FDE23722DA900F082DF /* Main.storyboard */,
-				1FE99FE123722DAF00F082DF /* Assets.xcassets */,
 				1FE99FE323722DAF00F082DF /* LaunchScreen.storyboard */,
+				1FE99FE123722DAF00F082DF /* Assets.xcassets */,
+				1FE99FDA23722DA900F082DF /* art.scnassets */,
 				1FE99FE623722DAF00F082DF /* Info.plist */,
 			);
 			path = SkyWalkYYCProto;
@@ -128,6 +164,16 @@
 			path = SkyWalkYYCProtoUITests;
 			sourceTree = "<group>";
 		};
+		872A5FD21988C6934CB36F15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */,
+				1FBF827A2389F3DF004298A8 /* libAFNetworking.a */,
+				49ED48B961A075C3DA2E59C8 /* Pods_SkyWalkYYCProto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE99FFF23722DB000F082DF /* Build configuration list for PBXNativeTarget "SkyWalkYYCProto" */;
 			buildPhases = (
+				56243847153953ED95273B12 /* [CP] Check Pods Manifest.lock */,
 				1FE99FD123722DA900F082DF /* Sources */,
 				1FE99FD223722DA900F082DF /* Frameworks */,
 				1FE99FD323722DA900F082DF /* Resources */,
+				1F06DDFA2389FE7200428EB0 /* Embed Frameworks */,
+				31D46E30B4A1E679AD4A971C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +304,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31D46E30B4A1E679AD4A971C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyWalkYYCProto/Pods-SkyWalkYYCProto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyWalkYYCProto/Pods-SkyWalkYYCProto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyWalkYYCProto/Pods-SkyWalkYYCProto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56243847153953ED95273B12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyWalkYYCProto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1FE99FD123722DA900F082DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +353,7 @@
 			files = (
 				1FE99FDD23722DA900F082DF /* ViewController.swift in Sources */,
 				1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */,
+				1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +524,18 @@
 		};
 		1FE9A00023722DB000F082DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E08CE9C90A79C1A42ABAFC /* Pods-SkyWalkYYCProto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QN34D8796;
+				DEVELOPMENT_TEAM = M94M867DDG;
 				INFOPLIST_FILE = SkyWalkYYCProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CPSC575.3000880.SkyWalkYYCProto;
+				PRODUCT_BUNDLE_IDENTIFIER = "-000880.SkyWalkYYCProto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,16 +544,18 @@
 		};
 		1FE9A00123722DB000F082DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CA8325F072E184C2937E5A /* Pods-SkyWalkYYCProto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QN34D8796;
+				DEVELOPMENT_TEAM = M94M867DDG;
 				INFOPLIST_FILE = SkyWalkYYCProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CPSC575.3000880.SkyWalkYYCProto;
+				PRODUCT_BUNDLE_IDENTIFIER = "-000880.SkyWalkYYCProto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
