@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SkyWalkYYCProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nj9-eK-Dbt">
+                                <rect key="frame" x="20" y="0.0" width="374" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="wZh-34-WEI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" red="0.93650621180000004" green="0.5300424695" blue="0.1998311579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3X-BB-Atd">
+                                <rect key="frame" x="82.333333333333329" y="515" width="249.33333333333337" height="220.66666666666663"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-Oo-Qhg">
+                                        <rect key="frame" x="-0.3333333333333286" y="0.0" width="249" height="220"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="k7e-Oo-Qhg" firstAttribute="top" secondItem="r3X-BB-Atd" secondAttribute="top" id="GuM-YT-NWa"/>
+                                    <constraint firstItem="k7e-Oo-Qhg" firstAttribute="centerX" secondItem="r3X-BB-Atd" secondAttribute="centerX" id="NfH-E1-sEN"/>
+                                    <constraint firstItem="k7e-Oo-Qhg" firstAttribute="centerY" secondItem="r3X-BB-Atd" secondAttribute="centerY" id="VCa-Dq-4sf"/>
+                                    <constraint firstItem="k7e-Oo-Qhg" firstAttribute="leading" secondItem="r3X-BB-Atd" secondAttribute="leading" constant="-0.3333333333333286" id="fGu-VK-FHi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-pR-aKI">
+                                <rect key="frame" x="16" y="565.66666666666663" width="59" height="119.33333333333337"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <state key="normal" title="😀"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUt-af-wmk">
+                                <rect key="frame" x="339" y="565.66666666666663" width="59" height="119.33333333333337"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <state key="normal" title="💰"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aUt-af-wmk" firstAttribute="leading" secondItem="r3X-BB-Atd" secondAttribute="trailing" constant="7.3333333333333144" id="5vF-aW-o5K"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="r3X-BB-Atd" secondAttribute="trailing" constant="82.333333333333371" id="6Vs-Ed-RzE"/>
+                            <constraint firstItem="r3X-BB-Atd" firstAttribute="leading" secondItem="oN9-pR-aKI" secondAttribute="trailing" constant="7.3333333333333286" id="9XO-16-rb1"/>
+                            <constraint firstItem="aUt-af-wmk" firstAttribute="top" secondItem="oN9-pR-aKI" secondAttribute="top" id="Bsb-3W-qV7"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="r3X-BB-Atd" secondAttribute="bottom" constant="0.33333333333337123" id="Fiz-XQ-HCL"/>
+                            <constraint firstItem="oN9-pR-aKI" firstAttribute="centerY" secondItem="r3X-BB-Atd" secondAttribute="centerY" id="GZj-lI-eac"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="nj9-eK-Dbt" secondAttribute="centerX" id="QQz-MM-cVR"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="Qp5-h2-owz"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="oN9-pR-aKI" secondAttribute="bottom" constant="51" id="UWp-na-WJN"/>
+                            <constraint firstItem="nj9-eK-Dbt" firstAttribute="trailing" secondItem="U0K-SW-4ec" secondAttribute="trailingMargin" id="V5p-5g-w4B"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="nj9-eK-Dbt" secondAttribute="top" id="XYP-bq-d4i"/>
+                            <constraint firstItem="r3X-BB-Atd" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="515" id="Yd9-uC-IhV"/>
+                            <constraint firstItem="oN9-pR-aKI" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="16" id="m2f-d4-LyJ"/>
+                            <constraint firstItem="aUt-af-wmk" firstAttribute="firstBaseline" secondItem="oN9-pR-aKI" secondAttribute="firstBaseline" id="mo2-R6-cf0"/>
+                            <constraint firstItem="nj9-eK-Dbt" firstAttribute="leading" secondItem="U0K-SW-4ec" secondAttribute="leadingMargin" id="qeX-8Q-JOX"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="u77-oD-5gx"/>
+                            <constraint firstItem="r3X-BB-Atd" firstAttribute="centerX" secondItem="nj9-eK-Dbt" secondAttribute="centerX" id="uhZ-v1-sTS"/>
+                            <constraint firstItem="aUt-af-wmk" firstAttribute="baseline" secondItem="oN9-pR-aKI" secondAttribute="baseline" id="xWZ-0T-fB1"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="aUt-af-wmk" secondAttribute="trailing" constant="16" id="ymn-gV-ei9"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="zT2-K7-vvW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="r3X-BB-Atd" id="5Qz-x3-x5c"/>
+                        <outlet property="locationLabel" destination="nj9-eK-Dbt" id="CvN-5D-yAU"/>
+                        <outlet property="miniMap" destination="k7e-Oo-Qhg" id="g0C-Uo-as1"/>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.010869565217405"/>
+        </scene>
+    </scenes>
+</document>
