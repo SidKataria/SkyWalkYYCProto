@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		1F06DDF82389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */; };
 		1F06DDF92389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F43D5AB23A2E35F001BBD7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */; };
+		1F43D5AF23A2EFEF001BBD7C /* RenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */; };
 		1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE78498238BB0900056A2A5 /* PointsScene.swift */; };
 		1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE99FD823722DA900F082DF /* AppDelegate.swift */; };
 		1FE99FDB23722DA900F082DF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE99FDA23722DA900F082DF /* art.scnassets */; };
-		1FE99FDD23722DA900F082DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE99FDC23722DA900F082DF /* ViewController.swift */; };
+		1FE99FDD23722DA900F082DF /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE99FDC23722DA900F082DF /* OriginalViewController.swift */; };
 		1FE99FE023722DA900F082DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE99FDE23722DA900F082DF /* Main.storyboard */; };
 		1FE99FE223722DAF00F082DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE99FE123722DAF00F082DF /* Assets.xcassets */; };
 		1FE99FE523722DAF00F082DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE99FE323722DAF00F082DF /* LaunchScreen.storyboard */; };
@@ -53,12 +55,14 @@
 
 /* Begin PBXFileReference section */
 		1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SkyWalkYYCProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderViewController.swift; sourceTree = "<group>"; };
 		1FBF827A2389F3DF004298A8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE78498238BB0900056A2A5 /* PointsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsScene.swift; sourceTree = "<group>"; };
 		1FE99FD523722DA900F082DF /* SkyWalkYYCProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWalkYYCProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE99FD823722DA900F082DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FE99FDA23722DA900F082DF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		1FE99FDC23722DA900F082DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FE99FDC23722DA900F082DF /* OriginalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
 		1FE99FDF23722DA900F082DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FE99FE123722DAF00F082DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE99FE423722DAF00F082DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,9 +140,11 @@
 			children = (
 				1FE99FD823722DA900F082DF /* AppDelegate.swift */,
 				1FE78498238BB0900056A2A5 /* PointsScene.swift */,
-				1FE99FDC23722DA900F082DF /* ViewController.swift */,
+				1FE99FDC23722DA900F082DF /* OriginalViewController.swift */,
 				1FE99FDE23722DA900F082DF /* Main.storyboard */,
+				1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */,
 				1FE99FE323722DAF00F082DF /* LaunchScreen.storyboard */,
+				1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */,
 				1FE99FE123722DAF00F082DF /* Assets.xcassets */,
 				1FE99FDA23722DA900F082DF /* art.scnassets */,
 				1FE99FE623722DAF00F082DF /* Info.plist */,
@@ -283,6 +289,7 @@
 			files = (
 				1FE99FDB23722DA900F082DF /* art.scnassets in Resources */,
 				1FE99FE523722DAF00F082DF /* LaunchScreen.storyboard in Resources */,
+				1F43D5AB23A2E35F001BBD7C /* GoogleService-Info.plist in Resources */,
 				1FE99FE223722DAF00F082DF /* Assets.xcassets in Resources */,
 				1FE99FE023722DA900F082DF /* Main.storyboard in Resources */,
 			);
@@ -351,7 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE99FDD23722DA900F082DF /* ViewController.swift in Sources */,
+				1F43D5AF23A2EFEF001BBD7C /* RenderViewController.swift in Sources */,
+				1FE99FDD23722DA900F082DF /* OriginalViewController.swift in Sources */,
 				1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */,
 				1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */,
 			);

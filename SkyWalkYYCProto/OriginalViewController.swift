@@ -11,7 +11,7 @@ import SceneKit
 import ARKit
 import MapKit
 import CoreLocation
-//import Firebase
+import Firebase
 
 
 class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDelegate, SCNPhysicsContactDelegate {
@@ -23,10 +23,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var miniMap: MKMapView!
     @IBOutlet weak var pointsLabel: UILabel!
-    
-    @IBAction func openPoints(_ sender: Any) {
-        
-    }
     
     var totalPoints = 0 {
         didSet {
@@ -86,6 +82,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         
     }
     
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         //locationLabel.text = "locations = \(locValue.latitude) \n \(locValue.longitude)"
@@ -110,9 +107,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         
         let xPos = randomPosition(lowerBound: -3, upperBound: 3)
         let yPos = randomPosition(lowerBound: -3, upperBound: 3)
+        let zPos = randomPosition(lowerBound: -3, upperBound: 3)
+
         
-        point.position = SCNVector3(x: xPos, y: yPos, z: -3)
-        point.runAction(SCNAction.rotate(by: 2, around: point.position, duration: 100))
+        point.position = SCNVector3(x: xPos, y: yPos, z: zPos)
+        point.runAction(SCNAction.repeat(SCNAction.rotateBy(x: 0, y: 1, z: 0, duration: 1), count: 2000))
         sceneView.scene.rootNode.addChildNode(point)
         
     }
