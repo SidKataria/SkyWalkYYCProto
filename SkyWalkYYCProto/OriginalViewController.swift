@@ -19,7 +19,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
   
     @IBOutlet weak var pointsDisplay: UILabel!
     @IBOutlet var sceneView: ARSCNView!
-    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var miniMap: MKMapView!
     @IBOutlet weak var pointsLabel: UILabel!
@@ -52,37 +51,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.scene.physicsWorld.contactDelegate = self
-        
-        /*for child in sceneView.scene.rootNode.childNodes {
-            child.runAction(SCNAction.rotate(by: 2, around: child.position, duration: 20))
-        }*/
-        
-        // Show statistics such as fps and timing information
-        //sceneView.showsStatistics = true
-        
-        // Create a new scene
-        //let scene = SCNScene()
-        
-        // Set the scene to the view
-        //sceneView.scene = scene
-        
-        //addObject()
-        
-        //Adding texts to the ARSCNView
-        /*let text = SCNText(string: "575 Demo: \n Look for points!", extrusionDepth: 1)
-        let material = SCNMaterial()
-        material.diffuse.contents = UIColor.systemBlue
-        text.materials = [material]
-        let textNode = SCNNode()
-        textNode.position = SCNVector3(x: 0, y: 0.02, z: -0.1)
-        textNode.scale = SCNVector3(x: 0.01, y: 0.01, z: 0.01)
-        textNode.geometry = text
-        sceneView.scene.rootNode.addChildNode(textNode)*/
-        sceneView.automaticallyUpdatesLighting = true
-        
     }
     
+    
+    //Unwinding
+    @IBAction func unwinding(unwindSegue: UIStoryboardSegue) {
+        
+    }
 
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         //locationLabel.text = "locations = \(locValue.latitude) \n \(locValue.longitude)"
@@ -142,6 +119,18 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    // segue ViewControllerB -> ViewController
+    @IBAction func unwindToThisView(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? MapViewController {
+            if sourceViewController.route != nil {
+                
+                //miniMap.addOverlay(sourceViewController.route!.polyline)
+                //miniMap.setVisibleMapRect(sourceViewController.route!.polyline.boundingMapRect, animated: true)
+                //pointsLabel.text = "You're back with directions"
+            }
+        }
     }
     
     // MARK: - ARSCNViewDelegate

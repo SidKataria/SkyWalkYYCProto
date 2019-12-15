@@ -11,6 +11,7 @@
 		1F06DDF92389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F43D5AB23A2E35F001BBD7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */; };
 		1F43D5AF23A2EFEF001BBD7C /* RenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */; };
+		1F43D5B723A48962001BBD7C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43D5B623A48962001BBD7C /* MapViewController.swift */; };
 		1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE78498238BB0900056A2A5 /* PointsScene.swift */; };
 		1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE99FD823722DA900F082DF /* AppDelegate.swift */; };
 		1FE99FDB23722DA900F082DF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE99FDA23722DA900F082DF /* art.scnassets */; };
@@ -57,6 +58,7 @@
 		1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SkyWalkYYCProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderViewController.swift; sourceTree = "<group>"; };
+		1F43D5B623A48962001BBD7C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1FBF827A2389F3DF004298A8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE78498238BB0900056A2A5 /* PointsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsScene.swift; sourceTree = "<group>"; };
 		1FE99FD523722DA900F082DF /* SkyWalkYYCProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWalkYYCProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				1FE78498238BB0900056A2A5 /* PointsScene.swift */,
 				1FE99FDC23722DA900F082DF /* OriginalViewController.swift */,
 				1FE99FDE23722DA900F082DF /* Main.storyboard */,
+				1F43D5B623A48962001BBD7C /* MapViewController.swift */,
 				1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */,
 				1FE99FE323722DAF00F082DF /* LaunchScreen.storyboard */,
 				1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */,
@@ -361,6 +364,7 @@
 				1F43D5AF23A2EFEF001BBD7C /* RenderViewController.swift in Sources */,
 				1FE99FDD23722DA900F082DF /* OriginalViewController.swift in Sources */,
 				1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */,
+				1F43D5B723A48962001BBD7C /* MapViewController.swift in Sources */,
 				1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
