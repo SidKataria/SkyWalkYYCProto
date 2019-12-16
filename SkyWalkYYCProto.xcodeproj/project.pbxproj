@@ -9,8 +9,28 @@
 /* Begin PBXBuildFile section */
 		1F06DDF82389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */; };
 		1F06DDF92389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1F43D5AB23A2E35F001BBD7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */; };
-		1F43D5AF23A2EFEF001BBD7C /* RenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */; };
+		1F1B6ECC23A6E49700F9CEF2 /* UtilitiesText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6ECB23A6E49600F9CEF2 /* UtilitiesText.swift */; };
+		1F1B6ED123A70A0E00F9CEF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B6ED023A70A0E00F9CEF2 /* GoogleService-Info.plist */; };
+		1F1B6ED323A716B600F9CEF2 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6ED223A716B600F9CEF2 /* BagViewController.swift */; };
+		1F1B6ED523A72AA200F9CEF2 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B6ED423A72AA200F9CEF2 /* Models.scnassets */; };
+		1F1B6F0F23A7322500F9CEF2 /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6EFC23A7321100F9CEF2 /* VirtualObjectARView.swift */; };
+		1F1B6F1023A7322500F9CEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6EFD23A7321300F9CEF2 /* ViewController.swift */; };
+		1F1B6F1123A7322500F9CEF2 /* VirtualObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6EFF23A7321500F9CEF2 /* VirtualObjectSelection.swift */; };
+		1F1B6F1223A7322500F9CEF2 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0023A7321500F9CEF2 /* StatusViewController.swift */; };
+		1F1B6F1323A7322500F9CEF2 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0123A7321700F9CEF2 /* ViewController+ARSCNViewDelegate.swift */; };
+		1F1B6F1423A7322500F9CEF2 /* ViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0223A7321900F9CEF2 /* ViewController+ObjectSelection.swift */; };
+		1F1B6F1523A7322500F9CEF2 /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0323A7321A00F9CEF2 /* VirtualObjectInteraction.swift */; };
+		1F1B6F1623A7322500F9CEF2 /* ThresholdPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0423A7321C00F9CEF2 /* ThresholdPanGesture.swift */; };
+		1F1B6F1723A7322500F9CEF2 /* ViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0523A7321E00F9CEF2 /* ViewController+Actions.swift */; };
+		1F1B6F1823A7322500F9CEF2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0723A7322000F9CEF2 /* Utilities.swift */; };
+		1F1B6F1923A7322500F9CEF2 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0923A7322200F9CEF2 /* FocusSquareSegment.swift */; };
+		1F1B6F1A23A7322500F9CEF2 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0A23A7322200F9CEF2 /* FocusSquare.swift */; };
+		1F1B6F1B23A7322500F9CEF2 /* ViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0B23A7322300F9CEF2 /* ViewController+CoachingOverlay.swift */; };
+		1F1B6F1C23A7322500F9CEF2 /* VirtualObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0D23A7322500F9CEF2 /* VirtualObjectLoader.swift */; };
+		1F1B6F1D23A7322500F9CEF2 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B6F0E23A7322500F9CEF2 /* VirtualObject.swift */; };
+		1F1BA5D023A6DCBF00911940 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1BA5CF23A6DCBF00911940 /* LoginViewController.swift */; };
+		1F1BA5D423A6DCF000911940 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1BA5D323A6DCF000911940 /* SignupViewController.swift */; };
+		1F1BA5D623A6DDA800911940 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1BA5D523A6DDA800911940 /* FirstViewController.swift */; };
 		1F43D5B723A48962001BBD7C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43D5B623A48962001BBD7C /* MapViewController.swift */; };
 		1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE78498238BB0900056A2A5 /* PointsScene.swift */; };
 		1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE99FD823722DA900F082DF /* AppDelegate.swift */; };
@@ -56,8 +76,28 @@
 
 /* Begin PBXFileReference section */
 		1F06DDF72389FE7200428EB0 /* Pods_SkyWalkYYCProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SkyWalkYYCProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderViewController.swift; sourceTree = "<group>"; };
+		1F1B6ECB23A6E49600F9CEF2 /* UtilitiesText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesText.swift; sourceTree = "<group>"; };
+		1F1B6ED023A70A0E00F9CEF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F1B6ED223A716B600F9CEF2 /* BagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
+		1F1B6ED423A72AA200F9CEF2 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		1F1B6EFC23A7321100F9CEF2 /* VirtualObjectARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
+		1F1B6EFD23A7321300F9CEF2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F1B6EFF23A7321500F9CEF2 /* VirtualObjectSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelection.swift; sourceTree = "<group>"; };
+		1F1B6F0023A7321500F9CEF2 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		1F1B6F0123A7321700F9CEF2 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		1F1B6F0223A7321900F9CEF2 /* ViewController+ObjectSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
+		1F1B6F0323A7321A00F9CEF2 /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
+		1F1B6F0423A7321C00F9CEF2 /* ThresholdPanGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThresholdPanGesture.swift; sourceTree = "<group>"; };
+		1F1B6F0523A7321E00F9CEF2 /* ViewController+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
+		1F1B6F0723A7322000F9CEF2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1F1B6F0923A7322200F9CEF2 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		1F1B6F0A23A7322200F9CEF2 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		1F1B6F0B23A7322300F9CEF2 /* ViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
+		1F1B6F0D23A7322500F9CEF2 /* VirtualObjectLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectLoader.swift; sourceTree = "<group>"; };
+		1F1B6F0E23A7322500F9CEF2 /* VirtualObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		1F1BA5CF23A6DCBF00911940 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = /Users/sid/Desktop/Fall19/YYCSkyWalk/Proto/SkyWalkYYCProto/SkyWalkYYCProto/LoginViewController.swift; sourceTree = "<absolute>"; };
+		1F1BA5D323A6DCF000911940 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		1F1BA5D523A6DDA800911940 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1F43D5B623A48962001BBD7C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1FBF827A2389F3DF004298A8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE78498238BB0900056A2A5 /* PointsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsScene.swift; sourceTree = "<group>"; };
@@ -115,6 +155,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1F1B6EFE23A7321500F9CEF2 /* Additional View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B6EFF23A7321500F9CEF2 /* VirtualObjectSelection.swift */,
+				1F1B6F0023A7321500F9CEF2 /* StatusViewController.swift */,
+			);
+			path = "Additional View Controllers";
+			sourceTree = "<group>";
+		};
+		1F1B6F0623A7322000F9CEF2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B6F0723A7322000F9CEF2 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1F1B6F0823A7322200F9CEF2 /* Focus Square */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B6F0923A7322200F9CEF2 /* FocusSquareSegment.swift */,
+				1F1B6F0A23A7322200F9CEF2 /* FocusSquare.swift */,
+			);
+			path = "Focus Square";
+			sourceTree = "<group>";
+		};
+		1F1B6F0C23A7322500F9CEF2 /* Virtual Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B6F0D23A7322500F9CEF2 /* VirtualObjectLoader.swift */,
+				1F1B6F0E23A7322500F9CEF2 /* VirtualObject.swift */,
+			);
+			path = "Virtual Objects";
+			sourceTree = "<group>";
+		};
 		1FE99FCC23722DA900F082DF = {
 			isa = PBXGroup;
 			children = (
@@ -141,14 +216,31 @@
 			isa = PBXGroup;
 			children = (
 				1FE99FD823722DA900F082DF /* AppDelegate.swift */,
+				1F1B6ED023A70A0E00F9CEF2 /* GoogleService-Info.plist */,
+				1F1B6ECB23A6E49600F9CEF2 /* UtilitiesText.swift */,
 				1FE78498238BB0900056A2A5 /* PointsScene.swift */,
+				1F1B6ED223A716B600F9CEF2 /* BagViewController.swift */,
+				1F1BA5D523A6DDA800911940 /* FirstViewController.swift */,
+				1F1BA5CF23A6DCBF00911940 /* LoginViewController.swift */,
+				1F1BA5D323A6DCF000911940 /* SignupViewController.swift */,
 				1FE99FDC23722DA900F082DF /* OriginalViewController.swift */,
-				1FE99FDE23722DA900F082DF /* Main.storyboard */,
 				1F43D5B623A48962001BBD7C /* MapViewController.swift */,
-				1F43D5AE23A2EFEF001BBD7C /* RenderViewController.swift */,
+				1FE99FDE23722DA900F082DF /* Main.storyboard */,
 				1FE99FE323722DAF00F082DF /* LaunchScreen.storyboard */,
-				1F43D5AA23A2E35F001BBD7C /* GoogleService-Info.plist */,
+				1F1B6EFE23A7321500F9CEF2 /* Additional View Controllers */,
+				1F1B6F0823A7322200F9CEF2 /* Focus Square */,
+				1F1B6F0423A7321C00F9CEF2 /* ThresholdPanGesture.swift */,
+				1F1B6F0623A7322000F9CEF2 /* Utilities */,
+				1F1B6EFD23A7321300F9CEF2 /* ViewController.swift */,
+				1F1B6F0523A7321E00F9CEF2 /* ViewController+Actions.swift */,
+				1F1B6F0123A7321700F9CEF2 /* ViewController+ARSCNViewDelegate.swift */,
+				1F1B6F0B23A7322300F9CEF2 /* ViewController+CoachingOverlay.swift */,
+				1F1B6F0223A7321900F9CEF2 /* ViewController+ObjectSelection.swift */,
+				1F1B6F0C23A7322500F9CEF2 /* Virtual Objects */,
+				1F1B6EFC23A7321100F9CEF2 /* VirtualObjectARView.swift */,
+				1F1B6F0323A7321A00F9CEF2 /* VirtualObjectInteraction.swift */,
 				1FE99FE123722DAF00F082DF /* Assets.xcassets */,
+				1F1B6ED423A72AA200F9CEF2 /* Models.scnassets */,
 				1FE99FDA23722DA900F082DF /* art.scnassets */,
 				1FE99FE623722DAF00F082DF /* Info.plist */,
 			);
@@ -292,7 +384,8 @@
 			files = (
 				1FE99FDB23722DA900F082DF /* art.scnassets in Resources */,
 				1FE99FE523722DAF00F082DF /* LaunchScreen.storyboard in Resources */,
-				1F43D5AB23A2E35F001BBD7C /* GoogleService-Info.plist in Resources */,
+				1F1B6ED123A70A0E00F9CEF2 /* GoogleService-Info.plist in Resources */,
+				1F1B6ED523A72AA200F9CEF2 /* Models.scnassets in Resources */,
 				1FE99FE223722DAF00F082DF /* Assets.xcassets in Resources */,
 				1FE99FE023722DA900F082DF /* Main.storyboard in Resources */,
 			);
@@ -361,9 +454,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F43D5AF23A2EFEF001BBD7C /* RenderViewController.swift in Sources */,
+				1F1B6F1623A7322500F9CEF2 /* ThresholdPanGesture.swift in Sources */,
+				1F1B6F1A23A7322500F9CEF2 /* FocusSquare.swift in Sources */,
+				1F1BA5D023A6DCBF00911940 /* LoginViewController.swift in Sources */,
+				1F1B6F1B23A7322500F9CEF2 /* ViewController+CoachingOverlay.swift in Sources */,
+				1F1BA5D423A6DCF000911940 /* SignupViewController.swift in Sources */,
+				1F1B6F0F23A7322500F9CEF2 /* VirtualObjectARView.swift in Sources */,
+				1F1B6F1723A7322500F9CEF2 /* ViewController+Actions.swift in Sources */,
+				1F1B6F1423A7322500F9CEF2 /* ViewController+ObjectSelection.swift in Sources */,
+				1F1B6ED323A716B600F9CEF2 /* BagViewController.swift in Sources */,
+				1F1B6F1023A7322500F9CEF2 /* ViewController.swift in Sources */,
+				1F1BA5D623A6DDA800911940 /* FirstViewController.swift in Sources */,
+				1F1B6F1523A7322500F9CEF2 /* VirtualObjectInteraction.swift in Sources */,
+				1F1B6F1C23A7322500F9CEF2 /* VirtualObjectLoader.swift in Sources */,
+				1F1B6F1223A7322500F9CEF2 /* StatusViewController.swift in Sources */,
 				1FE99FDD23722DA900F082DF /* OriginalViewController.swift in Sources */,
+				1F1B6F1323A7322500F9CEF2 /* ViewController+ARSCNViewDelegate.swift in Sources */,
+				1F1B6F1823A7322500F9CEF2 /* Utilities.swift in Sources */,
+				1F1B6F1123A7322500F9CEF2 /* VirtualObjectSelection.swift in Sources */,
+				1F1B6F1923A7322500F9CEF2 /* FocusSquareSegment.swift in Sources */,
 				1FE99FD923722DA900F082DF /* AppDelegate.swift in Sources */,
+				1F1B6F1D23A7322500F9CEF2 /* VirtualObject.swift in Sources */,
+				1F1B6ECC23A6E49700F9CEF2 /* UtilitiesText.swift in Sources */,
 				1F43D5B723A48962001BBD7C /* MapViewController.swift in Sources */,
 				1FE78499238BB0900056A2A5 /* PointsScene.swift in Sources */,
 			);

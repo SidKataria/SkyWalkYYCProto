@@ -12,9 +12,11 @@ import ARKit
 import MapKit
 import CoreLocation
 import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 
 
-class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDelegate, SCNPhysicsContactDelegate {
+class OriginalViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDelegate, SCNPhysicsContactDelegate {
     let locationManager = CLLocationManager()
   
     @IBOutlet weak var pointsDisplay: UILabel!
@@ -51,9 +53,43 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.scene.physicsWorld.contactDelegate = self
+        loadPoints()
+        
+        addObject()
     }
     
+    func loadPoints() {
+        let db = Firestore.firestore()
+        let uid = Firebase.Auth.auth().currentUser?.uid
+        db.collection("users").whereField("uid", isEqualTo: uid).getDocuments { (snapshot, error) in
+            if error != nil {
+                print(error!)
+                return
+            } else {
+                for document in snapshot!.documents {
+                    let point = document.data()["points"] as! Int
+                    self.totalPoints = point
+                    self.pointsLabel.text = "Points: \(point)"
+                }
+            }
+        }
+    }
     
+    func savePoints() {
+        let db = Firestore.firestore()
+        let uid = Firebase.Auth.auth().currentUser?.uid
+        db.collection("users").whereField("uid", isEqualTo: uid).getDocuments { (snapshot, error) in
+            if error != nil {
+                print(error!)
+                return
+            } else {
+                for document in snapshot!.documents {
+                    let point = self.totalPoints
+                    document.setValue(point, forKey: "points")
+                }
+            }
+        }
+    }
     //Unwinding
     @IBAction func unwinding(unwindSegue: UIStoryboardSegue) {
         
@@ -75,7 +111,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         // Run the view's session
         sceneView.session.run(configuration)
         
-        addObject()
+        //addObject()
     }
     
     func addObject() {
@@ -119,6 +155,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         
         // Pause the view's session
         sceneView.session.pause()
+        //savePoints()
     }
     
     // segue ViewControllerB -> ViewController
@@ -131,6 +168,14 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
                 //pointsLabel.text = "You're back with directions"
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let BagViewController = segue.destination as? BagViewController
+            else {
+                return
+        }
+        BagViewController.points = totalPoints
     }
     
     // MARK: - ARSCNViewDelegate
